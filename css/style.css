@@ -10,6 +10,7 @@ a {
 
 *, *::after, *::before {
     box-sizing: inherit;
+    
 }
 
 body { 
@@ -38,7 +39,7 @@ header {
 }
 
 .header__inner {
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 30px;
     display: flex;
     flex-direction: row;
@@ -55,7 +56,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 55px;
     padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
@@ -64,20 +65,22 @@ header {
 .logo img {
     width: 50px;
     height: auto;
+    border-radius: 50%;
 }
 
 .logo__text {
+    color:#f9e105;
     font-size: 25px;
     font-family: "Century Gothic";
     font-weight: bold;
-    color: white;
     margin-left: 10px;
-    text-shadow: 0.5px 0.5px 0.5px #000;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .nav__list {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 
@@ -187,7 +190,7 @@ header {
     text-align: center;
     line-height: 1;
 }
-.error-container p, h1, a {
+.error-container p, .error-container h1, .error-container a {
     margin: 15px
 }
 
