@@ -20,17 +20,18 @@ jobs:
           verbose: true
           token: ${{ secrets.GH_TOKEN }}
       - run: |
-          mkdir -p ./_site/loading 
-          cp Loading-Screen/css ./_site/loading
-          cp Loading-Screen/script ./_site/loading
-          cp Loading-Screen/img ./_site/loading
-          cp Loading-Screen/index.html ./_site/loading
+          mkdir -p _site/loading 
+          cp Loading-Screen/css _site/loading
+          cp Loading-Screen/script _site/loading
+          cp Loading-Screen/img _site/loading
+          cp Loading-Screen/index.html _site/loading
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
           name: github-pages
           retention-days: 1
   deploy:
+    needs: build
     name: Deploy To Github Pages
     runs-on: ubuntu-latest
     steps:
