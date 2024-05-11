@@ -14,6 +14,8 @@ jobs:
           repository: RP-PS/Loading-Screen
           token: ${{ secrets.GH_TOKEN }}
           path: loading
+      - run: |
+          echo "${{ var.LOADING_SCREEN_BACKEND_IP }} > loading/script/ip.js"
       - uses: actions/jekyll-build-pages@v1
         with:
           source: .
