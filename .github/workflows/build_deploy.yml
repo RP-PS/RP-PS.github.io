@@ -15,7 +15,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           path: loading
       - run: |
-          echo "${{ vars.LOADING_SCREEN_BACKEND_IP }}" > loading/script/ip.js
+          echo "const backend_ip = '${{ vars.LOADING_SCREEN_BACKEND_IP }}'" > loading/script/ip.js
       - uses: actions/jekyll-build-pages@v1
         with:
           source: .
