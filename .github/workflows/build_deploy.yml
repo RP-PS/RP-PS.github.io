@@ -13,18 +13,13 @@ jobs:
         with:
           repository: RP-PS/Loading-Screen
           token: ${{ secrets.GH_TOKEN }}
+          path: loading
       - uses: actions/jekyll-build-pages@v1
         with:
           source: .
           destination: ./_site
           verbose: true
           token: ${{ secrets.GH_TOKEN }}
-      - run: |
-          mkdir -p _site/loading 
-          cp Loading-Screen/css _site/loading
-          cp Loading-Screen/script _site/loading
-          cp Loading-Screen/img _site/loading
-          cp Loading-Screen/index.html _site/loading
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
