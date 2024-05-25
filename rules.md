@@ -1,6 +1,7 @@
 ---
 title: Правила RP-PS
 layout: default
+permalink: /rules/
 ---
 
 <script src="js/rules.js"></script>
