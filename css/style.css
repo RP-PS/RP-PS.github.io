@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url('../fonts/GOTHIC.woff2') format('woff2'),
+        url('../fonts/GOTHIC.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url('../fonts/GOTHICB.woff2') format('woff2'),
+        url('../fonts/GOTHICB.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
 html {
     box-sizing: border-box;
     background-color: #111111;
@@ -14,7 +29,7 @@ a {
 }
 
 body { 
-    font-family: "Century Gothic";
+    font-family: "Century-Gothic";
     line-height: 1.75;
 }
 .wrapper {
@@ -71,7 +86,7 @@ header {
 .logo__text {
     color:#f9e105;
     font-size: 25px;
-    font-family: "Century Gothic";
+    font-family: "Century-Gothic";
     font-weight: bold;
     margin-left: 10px;
     letter-spacing: 10px;
@@ -86,7 +101,7 @@ header {
 
 .nav__link {
     font-size: 18px;
-    font-family: "Century Gothic";
+    font-family: "Century-Gothic";
     text-decoration: none;
     color: white;
     text-shadow: 0.5px 0.5px 0.5px #000;
