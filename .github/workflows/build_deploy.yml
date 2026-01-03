@@ -17,6 +17,7 @@ jobs:
           path: loading
       - run: |
           echo "const backend_url = '${{ vars.LOADING_SCREEN_BACKEND_IP }}'" > loading/script/ip.js
+          sed -i "1i#### $(date)" rules.md
       - uses: actions/jekyll-build-pages@v1
         with:
           source: .
