@@ -3,13 +3,23 @@ name: "Build and Deploy rp-ps.ru"
 on: 
   push:
   workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
   build:
     name: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v45
+        with:
+          files: rules.md
+          
       - uses: actions/checkout@v4
         with:
           repository: RP-PS/Loading-Screen
@@ -17,7 +27,20 @@ jobs:
           path: loading
       - run: |
           echo "const backend_url = '${{ vars.LOADING_SCREEN_BACKEND_IP }}'" > loading/script/ip.js
-          sed -i "15i#### Редакция: $(TZ='Europe/Moscow' date '+%d.%m.%y')\n" rules.md
+          if [ "${{ steps.changed-files.outputs.any_changed }}" == "true" ]; then
+            # 1. Генерируем новую дату
+            CURRENT_DATE=$(TZ='Europe/Moscow' date '+%d.%m.%y')
+            
+            # 2. Полностью перезаписываем файл redaction.md новым текстом
+            echo "#### Редакция: $CURRENT_DATE" > _includes/redaction.md
+            
+            # 3. Коммитим и пушим изменения
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add _includes/redaction.md
+            git commit -m "chore: сменена дата редакции на $CURRENT_DATE"
+            git push
+          fi
       - uses: actions/jekyll-build-pages@v1
         with:
           source: .
