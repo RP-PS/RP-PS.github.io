@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Донат
+hide_toc: true
 ---
+
+
 <style>
     .content {
         max-width: max-content;
@@ -80,6 +83,7 @@ title: Донат
     }
 
 </style>
+
 <h4>Примечание: указывайте ник/SteamID при донате</h4>
 
 <div class="donate-container">

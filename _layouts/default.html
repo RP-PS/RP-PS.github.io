@@ -2,19 +2,36 @@
 <html lang="en">
     <head>
         {% include head.html %}
+		<script src="/js/toc.js"></script>
     </head>
     
     <body>
         <div class="wrapper">
             <header> {% include header.html %} </header>
+			{% capture toc_content %}
+				{% unless page.hide_toc %}
+					{% include toc.html 
+						html=content 
+						class="toc-list" 
+						item_class="toc-item"
+					%}
+				{% endunless %}
+			{% endcapture %}
             <div class="main"> 
-                <h1 class="page-title">{{ page.title }}</h1>
                 <div class="main__inner">
+				{% if toc_content.size > 100 %}
+                    <aside class="toc-sidebar">
+                       {{ toc_content }}
+                    </aside>
+				{% endif %}
+
                     <section class="content">
+        
                         {{ content }} 
                     </section>
                 </div>
             </div> 
         </div>
+		{% include footer.html %}
     </body> 
 </html>

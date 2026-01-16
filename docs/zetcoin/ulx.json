@@ -1,0 +1,121 @@
+[
+    {
+        "defines": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": " Команды ULX",
+                "file": "modules/sh/zcshop.lua",
+                "finish": [
+                    1,
+                    14
+                ],
+                "rawdesc": " Команды ULX",
+                "start": [
+                    1,
+                    10
+                ],
+                "type": "doc.class",
+                "view": "META",
+                "visible": "public"
+            }
+        ],
+        "desc": " Команды ULX",
+        "fields": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "ULX",
+                "extends": {
+                    "finish": [
+                        3,
+                        21
+                    ],
+                    "start": [
+                        3,
+                        15
+                    ],
+                    "type": "doc.type",
+                    "types": [
+                        {
+                            "finish": [
+                                3,
+                                21
+                            ],
+                            "start": [
+                                3,
+                                15
+                            ],
+                            "type": "doc.type.name",
+                            "view": "string"
+                        }
+                    ],
+                    "view": "string"
+                },
+                "file": "modules/sh/zcshop.lua",
+                "finish": [
+                    3,
+                    21
+                ],
+                "name": "name",
+                "rawdesc": "ULX",
+                "start": [
+                    3,
+                    10
+                ],
+                "type": "doc.field",
+                "view": "string",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "ZetCoin",
+                "extends": {
+                    "finish": [
+                        2,
+                        24
+                    ],
+                    "start": [
+                        2,
+                        18
+                    ],
+                    "type": "doc.type",
+                    "types": [
+                        {
+                            "finish": [
+                                2,
+                                24
+                            ],
+                            "start": [
+                                2,
+                                18
+                            ],
+                            "type": "doc.type.name",
+                            "view": "string"
+                        }
+                    ],
+                    "view": "string"
+                },
+                "file": "modules/sh/zcshop.lua",
+                "finish": [
+                    2,
+                    24
+                ],
+                "name": "project",
+                "rawdesc": "ZetCoin",
+                "start": [
+                    2,
+                    10
+                ],
+                "type": "doc.field",
+                "view": "string",
+                "visible": "public"
+            }
+        ],
+        "name": "META",
+        "rawdesc": " Команды ULX",
+        "type": "type",
+        "view": "META"
+    }
+]

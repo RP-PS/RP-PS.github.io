@@ -31,6 +31,21 @@ github_username: sergeyzet1
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM # GitHub Flavored Markdown — чтобы понимал тройные кавычки
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: "docs" # путь к папке с md от luals
+    values:
+      layout: "default"   # ваш стандартный шаблон
+      parent: "Lua API" # полезно для хлебных крошек
+      toc: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

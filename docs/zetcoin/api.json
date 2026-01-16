@@ -1,0 +1,1780 @@
+[
+    {
+        "defines": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": " Система управления валютой",
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    1,
+                    14
+                ],
+                "rawdesc": " Система управления валютой",
+                "start": [
+                    1,
+                    10
+                ],
+                "type": "doc.class",
+                "view": "META",
+                "visible": "public"
+            }
+        ],
+        "desc": " Система управления валютой",
+        "fields": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "API",
+                "extends": {
+                    "finish": [
+                        3,
+                        21
+                    ],
+                    "start": [
+                        3,
+                        15
+                    ],
+                    "type": "doc.type",
+                    "types": [
+                        {
+                            "finish": [
+                                3,
+                                21
+                            ],
+                            "start": [
+                                3,
+                                15
+                            ],
+                            "type": "doc.type.name",
+                            "view": "string"
+                        }
+                    ],
+                    "view": "string"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    3,
+                    21
+                ],
+                "name": "name",
+                "rawdesc": "API",
+                "start": [
+                    3,
+                    10
+                ],
+                "type": "doc.field",
+                "view": "string",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "ZetCoin",
+                "extends": {
+                    "finish": [
+                        2,
+                        24
+                    ],
+                    "start": [
+                        2,
+                        18
+                    ],
+                    "type": "doc.type",
+                    "types": [
+                        {
+                            "finish": [
+                                2,
+                                24
+                            ],
+                            "start": [
+                                2,
+                                18
+                            ],
+                            "type": "doc.type.name",
+                            "view": "string"
+                        }
+                    ],
+                    "view": "string"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    2,
+                    24
+                ],
+                "name": "project",
+                "rawdesc": "ZetCoin",
+                "start": [
+                    2,
+                    10
+                ],
+                "type": "doc.field",
+                "view": "string",
+                "visible": "public"
+            }
+        ],
+        "name": "META",
+        "rawdesc": " Система управления валютой",
+        "type": "type",
+        "view": "META"
+    },
+    {
+        "defines": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": " Игрок",
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    168,
+                    16
+                ],
+                "rawdesc": " Игрок",
+                "start": [
+                    168,
+                    10
+                ],
+                "type": "doc.class",
+                "view": "Player",
+                "visible": "public"
+            }
+        ],
+        "desc": " Игрок",
+        "fields": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Добавляет деньги в банк игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                205,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                205,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                205,
+                                33
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                205,
+                                28
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Добавляет деньги в банк игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        207,
+                        3
+                    ],
+                    "rawdesc": "Добавляет деньги в банк игрока.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        205,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:addBankMoney(count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    205,
+                    27
+                ],
+                "name": "addBankMoney",
+                "rawdesc": "Добавляет деньги в банк игрока.",
+                "start": [
+                    205,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Добавляет деньги в кошелек игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                219,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                219,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                219,
+                                35
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                219,
+                                30
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Добавляет деньги в кошелек игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                    "finish": [
+                        221,
+                        3
+                    ],
+                    "rawdesc": "Добавляет деньги в кошелек игрока.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        }
+                    ],
+                    "start": [
+                        219,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:addWalletMoney(count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    219,
+                    29
+                ],
+                "name": "addWalletMoney",
+                "rawdesc": "Добавляет деньги в кошелек игрока.",
+                "start": [
+                    219,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Возвращает банковский баланс игрока.\n\n@*return* `count` — Количество денег",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                173,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                173,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        }
+                    ],
+                    "desc": "Возвращает банковский баланс игрока.\n\n@*return* `count` — Количество денег",
+                    "finish": [
+                        175,
+                        3
+                    ],
+                    "rawdesc": "Возвращает банковский баланс игрока.",
+                    "returns": [
+                        {
+                            "desc": "Количество денег",
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "type": "function.return",
+                            "view": "number"
+                        }
+                    ],
+                    "start": [
+                        173,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:getBankBalance()"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    173,
+                    29
+                ],
+                "name": "getBankBalance",
+                "rawdesc": "Возвращает банковский баланс игрока.",
+                "start": [
+                    173,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Возвращает зарплату игрока.\n\n@*return* `salary` — Зарплата",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                232,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                232,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        }
+                    ],
+                    "desc": "Возвращает зарплату игрока.\n\n@*return* `salary` — Зарплата",
+                    "finish": [
+                        234,
+                        3
+                    ],
+                    "rawdesc": "Возвращает зарплату игрока.",
+                    "returns": [
+                        {
+                            "desc": "Зарплата",
+                            "name": "salary",
+                            "rawdesc": "Зарплата",
+                            "type": "function.return",
+                            "view": "number"
+                        }
+                    ],
+                    "start": [
+                        232,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:getSalaryMoney()"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    232,
+                    29
+                ],
+                "name": "getSalaryMoney",
+                "rawdesc": "Возвращает зарплату игрока.",
+                "start": [
+                    232,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Возвращает баланс кошелька игрока.",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                179,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                179,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        }
+                    ],
+                    "desc": "Возвращает баланс кошелька игрока.",
+                    "finish": [
+                        181,
+                        3
+                    ],
+                    "rawdesc": "Возвращает баланс кошелька игрока.",
+                    "returns": [
+                        {
+                            "type": "function.return",
+                            "view": "number"
+                        }
+                    ],
+                    "start": [
+                        179,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:getWalletBalance()"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    179,
+                    31
+                ],
+                "name": "getWalletBalance",
+                "rawdesc": "Возвращает баланс кошелька игрока.",
+                "start": [
+                    179,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Забирает деньги из банка игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                212,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                212,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                212,
+                                36
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                212,
+                                31
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Забирает деньги из банка игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                    "finish": [
+                        214,
+                        3
+                    ],
+                    "rawdesc": "Забирает деньги из банка игрока.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        }
+                    ],
+                    "start": [
+                        212,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:removeBankMoney(count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    212,
+                    30
+                ],
+                "name": "removeBankMoney",
+                "rawdesc": "Забирает деньги из банка игрока.",
+                "start": [
+                    212,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Забирает деньги из кошелька игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                226,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                226,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                226,
+                                36
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                226,
+                                31
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Забирает деньги из кошелька игрока.\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех",
+                    "finish": [
+                        228,
+                        3
+                    ],
+                    "rawdesc": "Забирает деньги из кошелька игрока.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        }
+                    ],
+                    "start": [
+                        226,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:removeBankMoney(count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    226,
+                    30
+                ],
+                "name": "removeBankMoney",
+                "rawdesc": "Забирает деньги из кошелька игрока.",
+                "start": [
+                    226,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает баланс банка.\n\n@*param* `count` — Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                188,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                188,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                188,
+                                33
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                188,
+                                28
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        },
+                        {
+                            "desc": "Если true, данные не будут сохранены в SQL",
+                            "finish": [
+                                188,
+                                42
+                            ],
+                            "name": "notSave",
+                            "rawdesc": "Если true, данные не будут сохранены в SQL",
+                            "start": [
+                                188,
+                                35
+                            ],
+                            "type": "local",
+                            "view": "boolean?"
+                        }
+                    ],
+                    "desc": "Устанавливает баланс банка.\n\n@*param* `count` — Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        190,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает баланс банка.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        188,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:setBankMoney(count: number, [notSave: boolean)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    188,
+                    27
+                ],
+                "name": "setBankMoney",
+                "rawdesc": "Устанавливает баланс банка.",
+                "start": [
+                    188,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает зарплату игроку.\n\n@*param* `count` — salary Зарплата",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                238,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                238,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "salary Зарплата",
+                            "finish": [
+                                238,
+                                31
+                            ],
+                            "name": "count",
+                            "rawdesc": "salary Зарплата",
+                            "start": [
+                                238,
+                                26
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Устанавливает зарплату игроку.\n\n@*param* `count` — salary Зарплата",
+                    "finish": [
+                        240,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает зарплату игроку.",
+                    "returns": [
+                        {
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "type": "function.return",
+                            "view": "string"
+                        }
+                    ],
+                    "start": [
+                        238,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:setSalary(count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    238,
+                    24
+                ],
+                "name": "setSalary",
+                "rawdesc": "Устанавливает зарплату игроку.",
+                "start": [
+                    238,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает баланс кошелька.\n\n@*param* `count` — Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": " Игрок",
+                            "finish": [
+                                197,
+                                8
+                            ],
+                            "name": "self",
+                            "rawdesc": " Игрок",
+                            "start": [
+                                197,
+                                8
+                            ],
+                            "type": "self",
+                            "view": "Player"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                197,
+                                35
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                197,
+                                30
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        },
+                        {
+                            "desc": "Если true, данные не будут сохранены в SQL",
+                            "finish": [
+                                197,
+                                44
+                            ],
+                            "name": "notSave",
+                            "rawdesc": "Если true, данные не будут сохранены в SQL",
+                            "start": [
+                                197,
+                                37
+                            ],
+                            "type": "local",
+                            "view": "boolean?"
+                        }
+                    ],
+                    "desc": "Устанавливает баланс кошелька.\n\n@*param* `count` — Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        199,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает баланс кошелька.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        197,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function Player:setWalletMoney(count: number, [notSave: boolean)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    197,
+                    29
+                ],
+                "name": "setWalletMoney",
+                "rawdesc": "Устанавливает баланс кошелька.",
+                "start": [
+                    197,
+                    9
+                ],
+                "type": "setmethod",
+                "view": "function",
+                "visible": "public"
+            }
+        ],
+        "name": "Player",
+        "rawdesc": " Игрок",
+        "type": "type",
+        "view": "Player"
+    },
+    {
+        "defines": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": " Таблица с функциями ZetCoin",
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    7,
+                    17
+                ],
+                "rawdesc": " Таблица с функциями ZetCoin",
+                "start": [
+                    7,
+                    10
+                ],
+                "type": "doc.class",
+                "view": "ZetCoin",
+                "visible": "public"
+            }
+        ],
+        "desc": " Таблица с функциями ZetCoin",
+        "fields": [
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Добавляет деньги в банк.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                102,
+                                38
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                102,
+                                31
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                102,
+                                45
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                102,
+                                40
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Добавляет деньги в банк.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        106,
+                        3
+                    ],
+                    "rawdesc": "Добавляет деньги в банк.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        102,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.addBankMoney(steamid: string, count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    102,
+                    29
+                ],
+                "name": "addBankMoney",
+                "rawdesc": "Добавляет деньги в банк.",
+                "start": [
+                    102,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Добавляет деньги в кошелек.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                125,
+                                40
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                125,
+                                33
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                125,
+                                47
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                125,
+                                42
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Добавляет деньги в кошелек.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        129,
+                        3
+                    ],
+                    "rawdesc": "Добавляет деньги в кошелек.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        125,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.addWalletMoney(steamid: string, count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    125,
+                    31
+                ],
+                "name": "addWalletMoney",
+                "rawdesc": "Добавляет деньги в кошелек.",
+                "start": [
+                    125,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "extends": {
+                    "args": [
+                        {
+                            "finish": [
+                                16,
+                                34
+                            ],
+                            "name": "steamid",
+                            "start": [
+                                16,
+                                27
+                            ],
+                            "type": "local",
+                            "view": "any"
+                        },
+                        {
+                            "finish": [
+                                16,
+                                44
+                            ],
+                            "name": "notcheck",
+                            "start": [
+                                16,
+                                36
+                            ],
+                            "type": "local",
+                            "view": "any"
+                        }
+                    ],
+                    "finish": [
+                        19,
+                        3
+                    ],
+                    "start": [
+                        16,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.createRow(steamid: any, notcheck: any)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    16,
+                    26
+                ],
+                "name": "createRow",
+                "start": [
+                    16,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": " Возвращает баланс банковского счета игрока.\n Если записи нет, создает её.\n\n@*param* `steamid` — SteamID игрока.\n\n@*return* `value` — Текущий баланс в банке.",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока.",
+                            "finish": [
+                                25,
+                                40
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока.",
+                            "start": [
+                                25,
+                                33
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        }
+                    ],
+                    "desc": " Возвращает баланс банковского счета игрока.\n Если записи нет, создает её.\n\n@*param* `steamid` — SteamID игрока.\n\n@*return* `value` — Текущий баланс в банке.",
+                    "finish": [
+                        33,
+                        3
+                    ],
+                    "rawdesc": " Возвращает баланс банковского счета игрока.\n Если записи нет, создает её.",
+                    "returns": [
+                        {
+                            "desc": "Текущий баланс в банке.",
+                            "name": "value",
+                            "rawdesc": "Текущий баланс в банке.",
+                            "type": "function.return",
+                            "view": "number"
+                        }
+                    ],
+                    "start": [
+                        25,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.getBankBalance(steamid: string)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    25,
+                    31
+                ],
+                "name": "getBankBalance",
+                "rawdesc": " Возвращает баланс банковского счета игрока.\n Если записи нет, создает её.",
+                "start": [
+                    25,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Получает текущую зарплату игрока.\n\n@*param* `steamid` — SteamID игрока",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                145,
+                                40
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                145,
+                                33
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        }
+                    ],
+                    "desc": "Получает текущую зарплату игрока.\n\n@*param* `steamid` — SteamID игрока",
+                    "finish": [
+                        150,
+                        3
+                    ],
+                    "rawdesc": "Получает текущую зарплату игрока.",
+                    "returns": [
+                        {
+                            "type": "function.return",
+                            "view": "number или nil"
+                        }
+                    ],
+                    "start": [
+                        145,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.getSalaryMoney(steamid: string)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    145,
+                    31
+                ],
+                "name": "getSalaryMoney",
+                "rawdesc": "Получает текущую зарплату игрока.",
+                "start": [
+                    145,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Возвращает баланс кошелька игрока.\n\n@*param* `steamid` — SteamID игрока\n\n@*return* `value` — Баланс или nil, если игрок не найден",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                38,
+                                42
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                38,
+                                35
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        }
+                    ],
+                    "desc": "Возвращает баланс кошелька игрока.\n\n@*param* `steamid` — SteamID игрока\n\n@*return* `value` — Баланс или nil, если игрок не найден",
+                    "finish": [
+                        42,
+                        3
+                    ],
+                    "rawdesc": "Возвращает баланс кошелька игрока.",
+                    "returns": [
+                        {
+                            "desc": "Баланс или nil, если игрок не найден",
+                            "name": "value",
+                            "rawdesc": "Баланс или nil, если игрок не найден",
+                            "type": "function.return",
+                            "view": "number или nil"
+                        }
+                    ],
+                    "start": [
+                        38,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.getWalletBalance(steamid: string)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    38,
+                    33
+                ],
+                "name": "getWalletBalance",
+                "rawdesc": "Возвращает баланс кошелька игрока.",
+                "start": [
+                    38,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Забирает деньги из банка.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                113,
+                                41
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                113,
+                                34
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                113,
+                                48
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                113,
+                                43
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Забирает деньги из банка.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        117,
+                        3
+                    ],
+                    "rawdesc": "Забирает деньги из банка.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        113,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.removeBankMoney(steamid: string, count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    113,
+                    32
+                ],
+                "name": "removeBankMoney",
+                "rawdesc": "Забирает деньги из банка.",
+                "start": [
+                    113,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Забирает деньги из кошелька.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                136,
+                                43
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                136,
+                                36
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                136,
+                                50
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                136,
+                                45
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Забирает деньги из кошелька.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        140,
+                        3
+                    ],
+                    "rawdesc": "Забирает деньги из кошелька.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        136,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.removeWalletMoney(steamid: string, count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    136,
+                    34
+                ],
+                "name": "removeWalletMoney",
+                "rawdesc": "Забирает деньги из кошелька.",
+                "start": [
+                    136,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает количество денег в банке.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успешно ли выполнена операция\n\n@*return* `error_message` — Текст ошибки",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                50,
+                                38
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                50,
+                                31
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег Количество денег",
+                            "finish": [
+                                50,
+                                45
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег Количество денег",
+                            "start": [
+                                50,
+                                40
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        },
+                        {
+                            "desc": "Если true, данные не будут сохранены в SQL",
+                            "finish": [
+                                50,
+                                54
+                            ],
+                            "name": "notSave",
+                            "rawdesc": "Если true, данные не будут сохранены в SQL",
+                            "start": [
+                                50,
+                                47
+                            ],
+                            "type": "local",
+                            "view": "boolean?"
+                        }
+                    ],
+                    "desc": "Устанавливает количество денег в банке.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успешно ли выполнена операция\n\n@*return* `error_message` — Текст ошибки",
+                    "finish": [
+                        74,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает количество денег в банке.",
+                    "returns": [
+                        {
+                            "desc": "Успешно ли выполнена операция",
+                            "name": "success",
+                            "rawdesc": "Успешно ли выполнена операция",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Текст ошибки",
+                            "name": "error_message",
+                            "rawdesc": "Текст ошибки",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        50,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.setBankMoney(steamid: string, count: number, [notSave: boolean)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    50,
+                    29
+                ],
+                "name": "setBankMoney",
+                "rawdesc": "Устанавливает количество денег в банке.",
+                "start": [
+                    50,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает зарплату игрока.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                157,
+                                35
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                157,
+                                28
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег",
+                            "finish": [
+                                157,
+                                42
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег",
+                            "start": [
+                                157,
+                                37
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        }
+                    ],
+                    "desc": "Устанавливает зарплату игрока.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        161,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает зарплату игрока.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        157,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.setSalary(steamid: string, count: number)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    157,
+                    26
+                ],
+                "name": "setSalary",
+                "rawdesc": "Устанавливает зарплату игрока.",
+                "start": [
+                    157,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "desc": "Устанавливает количество денег в кошельке.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                "extends": {
+                    "args": [
+                        {
+                            "desc": "SteamID игрока",
+                            "finish": [
+                                82,
+                                40
+                            ],
+                            "name": "steamid",
+                            "rawdesc": "SteamID игрока",
+                            "start": [
+                                82,
+                                33
+                            ],
+                            "type": "local",
+                            "view": "string"
+                        },
+                        {
+                            "desc": "Количество денег Количество денег",
+                            "finish": [
+                                82,
+                                47
+                            ],
+                            "name": "count",
+                            "rawdesc": "Количество денег Количество денег",
+                            "start": [
+                                82,
+                                42
+                            ],
+                            "type": "local",
+                            "view": "number"
+                        },
+                        {
+                            "desc": "Если true, данные не будут сохранены в SQL",
+                            "finish": [
+                                82,
+                                56
+                            ],
+                            "name": "notSave",
+                            "rawdesc": "Если true, данные не будут сохранены в SQL",
+                            "start": [
+                                82,
+                                49
+                            ],
+                            "type": "local",
+                            "view": "boolean?"
+                        }
+                    ],
+                    "desc": "Устанавливает количество денег в кошельке.\n\n@*param* `steamid` — SteamID игрока\n\n@*param* `count` — Количество денег Количество денег\n\n@*param* `notSave` — Если true, данные не будут сохранены в SQL\n\n@*return* `success` — Успех\n\n@*return* `error_message` — Ошибка в случае неудачи",
+                    "finish": [
+                        94,
+                        3
+                    ],
+                    "rawdesc": "Устанавливает количество денег в кошельке.",
+                    "returns": [
+                        {
+                            "desc": "Успех",
+                            "name": "success",
+                            "rawdesc": "Успех",
+                            "type": "function.return",
+                            "view": "boolean"
+                        },
+                        {
+                            "desc": "Ошибка в случае неудачи",
+                            "name": "error_message",
+                            "rawdesc": "Ошибка в случае неудачи",
+                            "type": "function.return",
+                            "view": "string?"
+                        }
+                    ],
+                    "start": [
+                        82,
+                        0
+                    ],
+                    "type": "function",
+                    "view": "function ZetCoin.setWalletMoney(steamid: string, count: number, [notSave: boolean)"
+                },
+                "file": "core/sv_zetcoin_functions.lua",
+                "finish": [
+                    82,
+                    31
+                ],
+                "name": "setWalletMoney",
+                "rawdesc": "Устанавливает количество денег в кошельке.",
+                "start": [
+                    82,
+                    9
+                ],
+                "type": "setfield",
+                "view": "function",
+                "visible": "public"
+            },
+            {
+                "async": false,
+                "deprecated": false,
+                "extends": {
+                    "finish": [
+                        1,
+                        33
+                    ],
+                    "start": [
+                        1,
+                        15
+                    ],
+                    "type": "binary",
+                    "view": "table"
+                },
+                "file": "shop/sv_products.lua",
+                "finish": [
+                    1,
+                    12
+                ],
+                "name": "shop",
+                "start": [
+                    1,
+                    0
+                ],
+                "type": "setfield",
+                "view": "table",
+                "visible": "public"
+            }
+        ],
+        "name": "ZetCoin",
+        "rawdesc": " Таблица с функциями ZetCoin",
+        "type": "type",
+        "view": "ZetCoin"
+    }
+]
